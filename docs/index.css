@@ -6,7 +6,6 @@ nav {
   box-sizing: border-box;
 }
 
-picture {
-  width: 30%;
-  height: 30%;
+p.sample img {
+width: 150px;
 }
