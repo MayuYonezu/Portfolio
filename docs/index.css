@@ -5,3 +5,7 @@ nav {
   padding-top: 5px;
   box-sizing: border-box;
 }
+
+picture {
+  width: 150px
+}
