@@ -36,3 +36,15 @@ img.works {
   width: 33%;
   height: auto;
 }
+
+@media screen and (min-width:481px){
+.narabi3{display:flex;flex-wrap:wrap;justify-content:space-between;}
+.narabi3>a{display:block;width:calc(33.33% - 1px);flex-shrink:0;}
+.narabi3>a>img{display:block;width:100%;height:auto;}
+}
+
+@media screen and (max-width:480px){
+.narabi3{display:block;}
+.narabi3>a{display:block;max-width:100%;margin:0 auto;}
+.narabi3>a>img{display:block;max-width:100%;height:auto;}
+}
