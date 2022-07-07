@@ -31,3 +31,8 @@ img.profile {
   width: 100px;
   height: auto;
 }
+
+img.works {
+  width: 33%;
+  height: auto;
+}
