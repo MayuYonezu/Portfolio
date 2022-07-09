@@ -33,8 +33,11 @@ img.profile {
 }
 
 img.works {
-  width: 33%;
-  height: auto;
+    zoom: 70%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width:481px){
