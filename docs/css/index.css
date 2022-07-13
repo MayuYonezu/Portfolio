@@ -1,0 +1,291 @@
+/* 全ての要素に適応 */
+*{
+    /* 余白の指定 */
+    margin: 0;
+    /* パディングの幅 */
+    padding: 0;
+}
+
+/* ダウンロードしたフォント'krungthep'を使う */
+@font-face {
+    font-family: 'バンコク';
+    src: url('../fonts/krungthep.ttf') format('truetype');
+    }
+
+body{
+    /* bodyタグの背景色を変更 */
+    background: #F3E1C7;
+}
+
+/* （中央配置）.containerクラスの指定 */
+.container{
+    /* 幅 */
+    width: 600px;
+    /* 左右同じ間隔で中央配置（margin=余白） */
+    margin: auto;
+
+    /* ナビゲーションの高さ分をプラス */
+    overflow: hidden;
+    /* nav+height+margin-bottom */
+    padding-top: 10%;
+}
+
+.inner-container{
+    width: 900px;
+    margin: auto;
+}
+
+/* ナビゲーションバーの設定 */
+nav{
+    /* 親ブロックの要素の縦幅を内側の要素がはみ出ないように調整
+        （heightを指定しなければ、内側の要素高さに親要素の高さをピッタリ合わせてくれる） */
+    overflow: hidden;
+    /* メニューの色変更 */
+    background:radial-gradient(#DC626A, #B14243);  
+    /* 下の空白30px */
+    margin-bottom: 0px;
+
+    /* ナビゲーション固定するためのコード->中身全て動かなくなる！ */
+    position: fixed;
+    width: 100%;
+    
+}
+
+/* ナビゲーション共通の設定 */
+.nav-li{
+    list-style-type: none;
+    height: 70px;
+}
+
+/* ナビゲーション（タイトル）の設定 */
+.nav-tli{
+    /* 要素を左に寄せる */
+    float:left;
+}
+
+/* ナビゲーション（コンテンツ）の設定 */
+.nav-nli{
+    /* 要素を右に寄せる */
+    float:right;
+}
+
+/* ナビゲーション（タイトル）の設定 */
+.nav-tbtn{
+    /* テキストにつく線の種類(U線) */
+    text-decoration: none;
+    /* テキストの色 */
+    color: #EFC18C;
+    /* 文字のサイズ */
+    font-size: 25px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+    /* 枠線内の間隔 */
+    padding: 17px;
+    /* ブロック要素 */
+    display: block;
+    /* アニメーションにかける時間 */
+    transition: 0.5s;
+}
+
+/* ナビゲーション（コンテンツ）の設定 */
+.nav-btn{
+    /* テキストにつく線の種類(U線) */
+    text-decoration: none;
+    /* テキストの色 */
+    color: #fff;
+    /* 文字のサイズ */
+    font-size: 15px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+    /* 枠線内の間隔 */
+    padding: 25px;
+    /* ブロック要素 */
+    display: block;
+    /* アニメーションにかける時間 */
+    transition: 0.5s;
+}
+
+/* ナビゲーション（タイトル）のアニメーション設定 */
+.nav-tli :hover{
+    /* テキストの色 */
+    color: #FF9933;
+    /* アニメーションにかける時間 */
+    transition: 0.5s;
+}
+
+/* ナビゲーション（コンテンツ）のアニメーション設定 */
+.nav-nli :hover{
+    /* テキストの色 */
+    color: #C1273A;
+    /* アニメーションにかける時間 */
+    transition: 0.5s;
+}
+
+/* ナビゲーションバーに隠れないようにするための空白 */
+a.anchor {
+    display: block;
+    padding-top: 90px;
+    margin-top: -90px;
+}
+
+/* プロフィール作成の背景と設定 */
+.profile{
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #EFC18C;
+    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+    text-align: center;
+    color:#fff;
+}
+
+/* 自分の写真の設定 */
+.pro-img{
+    /* 幅指定 */
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: auto;
+}
+
+/* 趣味の写真の設定 */
+.hob-img {
+    zoom: 70%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+/* フィールドの設定 */
+.field{
+    margin-top: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    font-family: 'バンコク', sans-serif;
+    text-align: center;
+    color:#482309;
+}
+
+/* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
+.field object{
+    width: 100%;
+    height: 400px;
+}
+
+.field h4{
+    margin-top: 10px;
+    /* 文字のサイズ */
+    font-size: 18px;
+    /* フォントの設定 */
+    font-family: 'Tsukushi B Round Gothic'; font-weight: bold;
+}
+
+.field p{
+    margin-top: 5px;
+    /* 文字のサイズ */
+    font-size: 14px;
+    /* フォントの設定 */
+    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+}
+
+/* スキル系の設定 */
+.skill{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    font-family: 'バンコク', sans-serif;
+    text-align: center;
+    color:#482309;
+}
+
+.container{
+    width: 600px;
+    margin: auto;
+}
+
+/* 親要素のdiv(例：card-container)をCSSのセレクタにしてdisplay:flex:を指定 */
+.card-container{
+    display:flex;
+    max-width: 750px;
+    height: 200px;
+}
+
+.card-img img{
+    width:100%;
+    height:100%;
+}
+
+.card-text{
+    width:100%;
+    margin: 20px;
+}
+
+.card-text h2{
+    padding-top: 10px;
+    font-size: 1em;
+}
+.card-text p{
+    font-size: 0.6em;
+    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+}
+.card-img{
+    width: 80%;
+}
+
+img{
+    width:100%;
+    height:100%;
+    vertical-align:bottom;
+}
+
+/* 自分の写真の設定 */
+.learn-img{
+    /* 幅指定 */
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 150px;
+    height: auto;
+}
+
+.yoko {
+    margin-top: 0px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  @media screen and (max-width: 500px) {
+    ul {
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* フィールドの設定 */
+.work{
+    margin-top: 50px;
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    font-family: 'バンコク', sans-serif;
+    text-align: center;
+    color:#482309;
+}
+
+  footer{
+    margin:0 auto;
+    /* 文字中央寄せ */
+    text-align: center;
+    background:radial-gradient(#DC626A, #B14243); 
+    color: #EFC18C;
+    padding: 20px;
+    width:100%;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+    /*font-family: 'Tsukushi B Round Gothic'; font-weight: normal;*/
+  }  
