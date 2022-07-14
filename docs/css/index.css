@@ -1,4 +1,4 @@
-/* 全ての要素に適応 */
+ /* 全ての要素に適応 */
 *{
     /* 余白の指定 */
     margin: 0;
@@ -296,4 +296,4 @@ img{
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
     /*font-family: 'Tsukushi B Round Gothic'; font-weight: normal;*/
-  }  
+  } 
