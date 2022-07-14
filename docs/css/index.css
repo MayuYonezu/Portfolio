@@ -277,6 +277,14 @@ img{
     color:#482309;
 }
 
+.contact-img{
+   /* 幅指定 */
+   margin-top: 20px;
+   margin-bottom: 30px;
+   width: 100px;
+   height: auto;
+}
+
   footer{
     margin:0 auto;
     /* 文字中央寄せ */
