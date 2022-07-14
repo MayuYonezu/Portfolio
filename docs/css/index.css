@@ -1,4 +1,4 @@
- /* 全ての要素に適応 */
+/* 全ての要素に適応 */
 *{
     /* 余白の指定 */
     margin: 0;
@@ -200,6 +200,14 @@ a.anchor {
     color:#482309;
 }
 
+.skill h2{
+    margin-top: 10px;
+    /* 文字のサイズ */
+    font-size: 20px;
+    /* フォントの設定 */
+    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+}
+
 .container{
     width: 600px;
     margin: auto;
@@ -243,9 +251,8 @@ img{
 /* 自分の写真の設定 */
 .learn-img{
     /* 幅指定 */
-    margin-top: 30px;
+    margin-top: -20px;
     margin-bottom: 30px;
-
     width: 150px;
     height: auto;
 }
@@ -296,4 +303,4 @@ img{
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
     /*font-family: 'Tsukushi B Round Gothic'; font-weight: normal;*/
-  } 
+  }  
