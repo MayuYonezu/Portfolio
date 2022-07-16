@@ -23,7 +23,6 @@ body{
     width: 600px;
     /* 左右同じ間隔で中央配置（margin=余白） */
     margin: auto;
-
     /* ナビゲーションの高さ分をプラス */
     overflow: hidden;
     /* nav+height+margin-bottom */
@@ -158,20 +157,25 @@ a.anchor {
 
 /* フィールドの設定 */
 .field{
-    margin-top: 50px;
-    margin-right: 400px;
-    margin-left: 400px;
-    margin-bottom: 50px;
+    margin: 0 auto;
     overflow: hidden;
     font-family: 'バンコク', sans-serif;
     text-align: center;
     color:#482309;
 }
 
+.field h1{
+    margin-top: 50px;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+}
+
 /* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
 .field object{
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 500px;
 }
 
 .field h4{
@@ -190,117 +194,124 @@ a.anchor {
     font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
 }
 
-/* スキル系の設定 */
-.skill{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    overflow: hidden;
-    font-family: 'バンコク', sans-serif;
-    text-align: center;
-    color:#482309;
-}
-
-.skill h2{
-    margin-top: 10px;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* フォントの設定 */
-    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
-}
-
-.container{
-    width: 600px;
-    margin: auto;
-}
-
-/* 親要素のdiv(例：card-container)をCSSのセレクタにしてdisplay:flex:を指定 */
-.card-container{
-    display:flex;
-    max-width: 750px;
-    height: 200px;
-}
-
-.card-img img{
-    width:100%;
-    height:100%;
-}
-
-.card-text{
-    width:100%;
-    margin: 20px;
-}
-
-.card-text h2{
-    padding-top: 10px;
-    font-size: 1em;
-}
-.card-text p{
-    font-size: 0.6em;
-    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
-}
-.card-img{
-    width: 80%;
-}
-
-img{
-    width:100%;
-    height:100%;
-    vertical-align:bottom;
-}
-
-/* 自分の写真の設定 */
-.learn-img{
-    /* 幅指定 */
-    margin-top: -20px;
-    margin-bottom: 30px;
-    width: 150px;
-    height: auto;
-}
-
-.yoko {
-    margin-top: 0px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    
-  }
-  @media screen and (max-width: 500px) {
-    ul {
-      flex-direction: column;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  /* フィールドの設定 */
-.work{
-    margin-top: 50px;
-    margin-right: 400px;
-    margin-left: 400px;
-    margin-bottom: 50px;
-    overflow: hidden;
-    font-family: 'バンコク', sans-serif;
-    text-align: center;
-    color:#482309;
-}
-
-.contact-img{
-   /* 幅指定 */
-   margin-top: 20px;
-   margin-bottom: 30px;
-   width: 100px;
-   height: auto;
-}
-
   footer{
+    overflow: hidden;
     margin:0 auto;
     /* 文字中央寄せ */
     text-align: center;
     background:radial-gradient(#DC626A, #B14243); 
     color: #EFC18C;
-    padding: 20px;
-    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
     /*font-family: 'Tsukushi B Round Gothic'; font-weight: normal;*/
-  }  
+  } 
+  
+  /* フィールドの設定 */
+.skill{
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: 'バンコク', sans-serif;
+    text-align: center;
+    color:#482309;
+}
+
+.skill h1{
+    margin-top: 100px;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+}
+
+.skill h2{
+    margin-top: 30px;
+    /* 文字のサイズ */
+    font-size: 70px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+}
+
+.skill p{
+    margin-top: 5px;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* フォントの設定 */
+    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+}
+
+.skill-img {
+    zoom: 30%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+.work{
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: 'バンコク', sans-serif; 
+    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
+    text-align: center;
+    color:#482309;
+}
+
+.work h1{
+    margin-top: 100px;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+}
+
+.work h2{
+    margin-top: 30px;
+    /* 文字のサイズ */
+    font-size: 25px;
+    /* フォントの設定 */
+    font-family:'Tsukushi B Round Gothic'; font-weight: bold;
+}
+
+.work-img {
+    zoom: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .contact{
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: 'バンコク', sans-serif; 
+    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
+    text-align: center;
+    color:#482309;
+    margin-bottom: 100px;
+}
+
+.contact h1{
+    margin-top: 100px;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+}
+
+.contact-img {
+    zoom: 20%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
