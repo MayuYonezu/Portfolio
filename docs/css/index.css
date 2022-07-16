@@ -137,6 +137,30 @@ a.anchor {
     color:#fff;
 }
 
+.panel-item{
+    text-decoration: none;
+
+    overflow: hidden;
+
+    display: block;
+}
+
+.panel-item img{
+
+    width: 200px;
+    height: auto;
+
+    transition: 1.5s ease;
+}
+
+.panel-item:hover img{
+
+    width: 230px;
+    height: auto;
+
+    transition: 1.5s ease;
+}
+
 /* 自分の写真の設定 */
 .pro-img{
     /* 幅指定 */
@@ -277,6 +301,27 @@ a.anchor {
     font-family:'Tsukushi B Round Gothic'; font-weight: bold;
 }
 
+.work a{
+    text-decoration: none;
+    padding:16px;
+    border-radius: 3px;
+    font-size: 24px;
+
+    transition: 0.3s;
+    
+    display:block;
+    padding-bottom: 10px;
+    border-bottom: 10px solid #F3E1C7;
+}
+
+.work a:hover{
+    background: #F3E1C7;
+    color:#F3E1C7;
+    transition: 0.3s;
+    margin-top: 9px;
+    border-bottom-width:1px ;
+}
+
 .work-img {
     zoom: 100%;
     display: inline-block;
@@ -314,4 +359,35 @@ a.anchor {
     margin-right: 50px;
     margin-left: 50px;
   }
+
+  .contact-img a{
+    text-decoration: none;
+    padding:16px;
+    border-radius: 3px;
+    font-size: 24px;
+
+    transition: 0.3s;
+    
+    display:block;
+    padding-bottom: 10px;
+    border-bottom: 10px solid #F3E1C7;
+}
+
+.contact-img a:hover{
+    background: #F3E1C7;
+    color:#F3E1C7;
+    transition: 0.3s;
+    margin-top: 9px;
+    border-bottom-width:1px ;
+}
+
+.contact-img p{
+    margin-top: 5px;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* フォントの設定 */
+    font-family: 'バンコク', sans-serif;
+    color:#F3E1C7;
+
+}
 
