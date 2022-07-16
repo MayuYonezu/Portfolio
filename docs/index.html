@@ -1,464 +1,162 @@
-/* 全ての要素に適応 */
-*{
-    /* 余白の指定 */
-    margin: 0;
-    /* パディングの幅 */
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lnag="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./images/iCon.png">
+    <title>まゆペでぃあ</title>
+</head>
+<body>
+    <!--ナビゲーションー-->
+    <nav>
+        <ul class="inner_container">
+            <li class="nav-tli nav-li"><a href="#" class="nav-tbtn">Mayu Yonezu</a></li>
+            <li class="nav-nli nav-li"><a href="#field" class="nav-btn">Field</a></li>
+            <li class="nav-nli nav-li"><a href="#skill" class="nav-btn">Skill</a></li>
+            <li class="nav-nli nav-li"><a href="#works" class="nav-btn">Works</a></li>
+            <li class="nav-nli nav-li"><a href="#contact" class="nav-btn">Contact</a></li>
+            
+            
+        </ul>
+    </nav>
 
-/* ダウンロードしたフォント'krungthep'を使う */
-@font-face {
-    font-family: 'バンコク';
-    src: url('../fonts/krungthep.ttf') format('truetype');
-    }
+    <!--プロフィール関連-->
+    <div">
+        <div class="profile">
+            <a class="panel-item"><img src="./images/profile.png" class="pro-img"></a><br>
+            Mayu Yonezu / 米津 舞優<br>
+            武蔵野大学データサイエンス学部データサイエンス学科<br>
+            2002/04/05生まれの20才<br>
+            目標は最上級のかわいいを見つけることです<br>
+            <div class="hob-img">
+                <img src="./images/hobby1.png">
+                <p>カメラ</p> 
+            </div>
+            <div class="hob-img">
+                <img src="./images/hobby2.png">
+                <p>カフェ巡り</p> 
+            </div>
+            <div class="hob-img">
+                <img src="./images/hobby3.png">
+                <p>かわいい探索</p> 
+            </div><br>
+            
+        </div>
+    </div>
 
-body{
-    /* bodyタグの背景色を変更 */
-    background: #F3E1C7;
-}
+    <!--フィールド関連-->
+    <div class="field">
+        <a id="field" class="anchor"></a>
+        <h1 >Field</h1><br>
+        <!--pdfのスライドから画像のスライドに変更するかも！-->
+        <object data="./images/slide.pdf"></object>
+        <h4>パーソナルカラーに基づいた被服マッチングMRシステムの開発</h4> 
+        <p>パーソナルカラーの観点から、透過型HMDを用いて、ユーザの肌の色と衣服の色の相性を可視化するシステム開発を行なっています。</p>
+    </div>
 
-/* （中央配置）.containerクラスの指定 */
-.container{
-    /* 幅 */
-    width: 600px;
-    /* 左右同じ間隔で中央配置（margin=余白） */
-    margin: auto;
-    /* ナビゲーションの高さ分をプラス */
-    overflow: hidden;
-    /* nav+height+margin-bottom */
-    padding-top: 10%;
-}
+    <!--スキル関連-->
+    <div class="skill">
+        <a id="skill" class="anchor"></a>
+        <h1 >Skill</h1><br>
+        <div class="skill-img">
+            <img src="./images/python.png">
+            <h2>Python</h2>
+            <p>★★★☆☆</p>
+            <p>勉強中です</p>
+        </div>
+        <div class="skill-img">
+            <img src="./images/c.png">
+            <h2>C#</h2>
+            <p>★★★☆☆</p>
+            <p>勉強中です</p>
+        </div>
+        <div class="skill-img">
+            <img src="./images/swift.png">
+            <h2>Swift</h2>
+            <p>★★★☆☆</p>
+            <p>勉強中です</p>
+        </div>
+        <div class="skill-img">
+            <img src="./images/HTML.png">
+            <h2>HTML/CSS</h2>
+            <p>★★★☆☆</p>
+            <p>勉強中です</p>
+        </div>
+        <div class="skill-img">
+            <img src="./images/ill.png">
+            <h2>Illustrator</h2>
+            <p>★★★☆☆</p>
+            <p>勉強中です</p>
+        </div>
+        <div class="skill-img">
+            <img src="./images/photo.png">
+            <h2>Photoshop</h2>
+            <p>★★★☆☆</p>
+            <p>勉強中です</p>
+        </div>
+    </div>
 
-.inner-container{
-    width: 900px;
-    margin: auto;
-}
+    <!--WORK関連-->
+    <div class="work">
+        <a id="works" class="anchor"></a>
+        <h1 >Works</h1><br>
+    <div class="work-img">
+        <a a href="#field"><img src="./images/works1.png"></a>
+        <h2>パーソナルカラーに基づいた被服マッチングMRシステムの開発</h2>
+        <p>パーソナルカラーの観点から、透過型HMDを用いて、ユーザの肌の色と衣服の色の相性を可視化するシステム開発を行なっています。</p>
+        <img src="./images/c.png" width="50px" height="50px">
+        
+    </div>
 
-/* ナビゲーションバーの設定 */
-nav{
-    /* 親ブロックの要素の縦幅を内側の要素がはみ出ないように調整
-        （heightを指定しなければ、内側の要素高さに親要素の高さをピッタリ合わせてくれる） */
-    overflow: hidden;
-    /* メニューの色変更 */
-    background:radial-gradient(#DC626A, #B14243);  
-    /* 下の空白30px */
-    margin-bottom: 30px;
-    
+    <div class="work-img">
+        <a href="https://line.me/S/sticker/5201247/?lang=ja&utm_source=gnsh_stickerDetail"><img src="./images/works2.png"></a>
+        <h2>LINEスタンプ『BUBU4』</h2>
+        <p>中学2年生の頃からLINEスタンプの作成・販売を行なっています。</p>
+        <img src="./images/ill.png" width="50px" height="50px">
+    </div>
 
-    /* ナビゲーション固定するためのコード->中身全て動かなくなる！ */
-    position: fixed;
-    width: 100%;
-    display: flex;
-    
-}
+    <div class="work-img">
+        <a href="https://apps.apple.com/jp/app/missiontravel/id1629931615"><img src="./images/works3.png"></a>
+        <h2>iOSアプリ『MissionTravel』</h2>
+        <p>たびとミッションを組み合わせた旅の計画を立てるアプリケーションです。</p>
+        <img src="./images/swift.png" width="50px" height="50px">
+        <img src="./images/ill.png" width="50px" height="50px">
+    </div>
+    </div>
 
-/* ナビゲーション共通の設定 */
-.nav-li{
-    list-style-type: none;
-    height: 70px;
+    <!--Contact関連-->
+    <div class="contact">
+        <a id="contact" class="anchor"></a>
+        <h1>Contact</h1><br>
+        <div class="form">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe09KQjLjPtyffPLxx0u4GPUCadErvY4ltNvGtM03mjH9khSw/formResponse" method="post">
+              <input type="text" name="entry.2005620554"  placeholder="お名前"><br>
+              <input type="email" name="entry.1045781291"  placeholder="メールアドレス"><br>
+              <input type="text" name="entry.1166974658"  placeholder="件名"><br>
+              <textarea name="entry.839337160" rows="10" cols="30" placeholder="メッセージ"></textarea><br>
+              <button type="submit" name="submit" class="btn btn-info ">Submit</button>
+            </form>
+          </div>
 
-}
+        <!-- <div class="contact-img">
+            <a href="https://github.com/MayuYonezu"><img src="./images/github.png"></a>
+            <p>github</p>
+        </div>
 
-/* ナビゲーション（タイトル）の設定 */
-.nav-tli{
-    /* 要素を左に寄せる */
-    float:left;
-}
+        <div class="contact-img">
+            <a href="https://www.facebook.com/machan45/"><img src="./images/facebook.png"></a>
+            <p>facebook</p>
+        </div>
 
-/* ナビゲーション（コンテンツ）の設定 */
-.nav-nli{
-    /* 要素を右に寄せる */
-    float:left;
-}
+        <div class="contact-img">
+            <a href="https://www.instagram.com/cherie.toi/"><img src="./images/instagram.png"></a>
+            <p>instagram</p>
+        </div> -->
+        
+    </div>
 
-/* ナビゲーション（タイトル）の設定 */
-.nav-tbtn{
-    /* テキストにつく線の種類(U線) */
-    text-decoration: none;
-    /* テキストの色 */
-    color: #EFC18C;
-    /* 文字のサイズ */
-    font-size: 25px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-    /* 枠線内の間隔 */
-    padding: 17px;
-    /* ブロック要素 */
-    display: flex;
-    /* アニメーションにかける時間 */
-    transition: 0.5s;
-}
+    <footer>©︎2022 Mayu Yonezu</footer>
 
-/* ナビゲーション（コンテンツ）の設定 */
-.nav-btn{
-    /* テキストにつく線の種類(U線) */
-    text-decoration: none;
-    /* テキストの色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 15px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-    /* 枠線内の間隔 */
-    padding: 10px;
-    margin-top:17px;
-    /* ブロック要素 */
-    display: flex;
-    /* アニメーションにかける時間 */
-    transition: 0.5s;
-}
-
-/* ナビゲーション（タイトル）のアニメーション設定 */
-.nav-tli :hover{
-    /* テキストの色 */
-    color: #FF9933;
-    /* アニメーションにかける時間 */
-    transition: 0.5s;
-}
-
-/* ナビゲーション（コンテンツ）のアニメーション設定 */
-.nav-nli :hover{
-    /* テキストの色 */
-    color: #C1273A;
-    /* アニメーションにかける時間 */
-    transition: 0.5s;
-}
-
-/* ナビゲーションバーに隠れないようにするための空白 */
-a.anchor {
-    display: block;
-    padding-top: 90px;
-    margin-top: -90px;
-}
-
-/* プロフィール作成の背景と設定 */
-.profile{
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: #EFC18C;
-    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
-    text-align: center;
-    color:#fff;
-}
-
-.panel-item{
-    margin-top: 30px auto;
-    text-decoration: none;
-
-    overflow: hidden;
-
-    display: block;
-}
-
-.panel-item img{
-
-    width: 200px;
-    height: auto;
-
-    transition: 1.5s ease;
-}
-
-.panel-item:hover img{
-
-    width: 230px;
-    height: auto;
-
-    transition: 1.5s ease;
-}
-
-/* 自分の写真の設定 */
-.pro-img{
-    /* 幅指定 */
-    margin-top: 100px;
-    margin-bottom: 30px;
-    width: 200px;
-    height: auto;
-}
-
-/* 趣味の写真の設定 */
-.hob-img {
-    zoom: 70%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-/* フィールドの設定 */
-.field{
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: 'バンコク', sans-serif;
-    text-align: center;
-    color:#482309;
-}
-
-.field h1{
-    margin-top: 50px;
-    /* 文字のサイズ */
-    font-size: 40px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-}
-
-/* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
-.field object{
-    width: 80%;
-    height: 500px;
-}
-
-.field h4{
-    margin-top: 10px;
-    /* 文字のサイズ */
-    font-size: 18px;
-    /* フォントの設定 */
-    font-family: 'Tsukushi B Round Gothic'; font-weight: bold;
-}
-
-.field p{
-    margin-top: 5px;
-    /* 文字のサイズ */
-    font-size: 14px;
-    /* フォントの設定 */
-    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
-}
-
-  footer{
-    overflow: hidden;
-    margin:0 auto;
-    /* 文字中央寄せ */
-    text-align: center;
-    background:radial-gradient(#DC626A, #B14243); 
-    color: #EFC18C;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-    /*font-family: 'Tsukushi B Round Gothic'; font-weight: normal;*/
-  } 
-  
-  /* フィールドの設定 */
-.skill{
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: 'バンコク', sans-serif;
-    text-align: center;
-    color:#482309;
-}
-
-.skill h1{
-    margin-top: 100px;
-    /* 文字のサイズ */
-    font-size: 40px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-}
-
-.skill h2{
-    margin-top: 30px;
-    /* 文字のサイズ */
-    font-size: 70px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-}
-
-.skill p{
-    margin-top: 5px;
-    /* 文字のサイズ */
-    font-size: 40px;
-    /* フォントの設定 */
-    font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
-}
-
-.skill-img {
-    zoom: 30%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-
-.work{
-    margin: 0 auto;
-    overflow: hidden;
-    font-family: 'バンコク', sans-serif; 
-    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
-    text-align: center;
-    color:#482309;
-}
-
-.work h1{
-    margin-top: 100px;
-    /* 文字のサイズ */
-    font-size: 40px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-}
-
-.work h2{
-    margin-top: 30px;
-    /* 文字のサイズ */
-    font-size: 25px;
-    /* フォントの設定 */
-    font-family:'Tsukushi B Round Gothic'; font-weight: bold;
-}
-
-.work a{
-    text-decoration: none;
-    padding:16px;
-    border-radius: 3px;
-    font-size: 24px;
-
-    transition: 0.3s;
-    
-    display:block;
-    padding-bottom: 10px;
-    border-bottom: 10px solid #F3E1C7;
-}
-
-.work a:hover{
-    background: #F3E1C7;
-    color:#F3E1C7;
-    transition: 0.3s;
-    margin-top: 9px;
-    border-bottom-width:1px ;
-}
-
-.work-img {
-    zoom: 100%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-
-  .contact{
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: #EFC18C;
-    font-family: 'バンコク', sans-serif; 
-    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
-    text-align: center;
-    color:#482309;
-    margin-bottom: 0px;
-
-    
-
-}
-
-.contact h1{
-    margin-top: 100px;
-    /* 文字のサイズ */
-    font-size: 40px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-}
-
-.contact-img {
-    zoom: 20%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-
-  .contact-img a{
-    text-decoration: none;
-    padding:16px;
-    border-radius: 3px;
-    font-size: 24px;
-
-    transition: 0.3s;
-    
-    display:block;
-    padding-bottom: 10px;
-    border-bottom: 10px solid #EFC18C;;
-}
-
-.contact-img a:hover{
-    background: #EFC18C;;
-    color:#EFC18C;;
-    transition: 0.3s;
-    margin-top: 9px;
-    border-bottom-width:1px ;
-}
-
-.contact-img p{
-    margin-top: 5px;
-    /* 文字のサイズ */
-    font-size: 40px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-    color:#EFC18C;
-}
-
-.form input{
-    margin-top: 10px;
-    border:0;
-    padding:10px;
-    font-family:Arial, sans-serif;
-    color:#482309;
-    border:1px solid #C1273A;
-    margin:0 0 20px;
-    width:300px;
-
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-
-    -moz-box-shadow: inset 0 0 4px #C1273A;
-    -webkit-box-shadow: inset 0 0 4px C1273A;
-    box-shadow: inner 0 0 4px #C1273A;
-    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
-}
-
-.form textarea{
-    margin-top: 10px;
-    border:0;
-    padding:10px;
-    font-family:Arial, sans-serif;
-    color:#482309;
-    border:1px solid  #C1273A;
-    margin:0 0 20px;
-    width:300px;
-
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-
-    -moz-box-shadow: inset 0 0 4px #C1273A;
-    -webkit-box-shadow: inset 0 0 4px C1273A;
-    box-shadow: inner 0 0 4px #C1273A;
-    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
-}
-
-.form button{
-    background:radial-gradient(#DC626A, #B14243); 
-     
-    color: #EFC18C;
-    font-size: 12px;
-    border: 1px solid #EFC18C;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-family: 'バンコク', sans-serif;
-
-    margin-bottom: 30px;
-}
-
-.form button:hover{
-    background:radial-gradient(#DC626A, #B14243); 
-    border:1px solid  #C1273A;
-    color:#FF9933;
-    transition: 1s;
-}
+</body>
+</html>
