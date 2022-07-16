@@ -435,7 +435,8 @@ a.anchor {
 }
 
 .form button{
-    background: #C1273A;
+    background:radial-gradient(#DC626A, #B14243); 
+     
     color: #EFC18C;
     font-size: 12px;
     border: 1px solid #EFC18C;
@@ -451,8 +452,8 @@ a.anchor {
 }
 
 .form button:hover{
-    background: #B14243;
-    color:#fff;
-    border: 1px solid #C1273A;
+    background:radial-gradient(#DC626A, #B14243); 
+    border:1px solid  #C1273A;
+    color:#FF9933;
     transition: 1s;
 }
