@@ -335,11 +335,15 @@ a.anchor {
   .contact{
     margin: 0 auto;
     overflow: hidden;
+    background-color: #EFC18C;
     font-family: 'バンコク', sans-serif; 
     font-family:'Tsukushi B Round Gothic'; font-weight: normal;
     text-align: center;
     color:#482309;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+
+    
+
 }
 
 .contact h1{
@@ -370,12 +374,12 @@ a.anchor {
     
     display:block;
     padding-bottom: 10px;
-    border-bottom: 10px solid #F3E1C7;
+    border-bottom: 10px solid #EFC18C;;
 }
 
 .contact-img a:hover{
-    background: #F3E1C7;
-    color:#F3E1C7;
+    background: #EFC18C;;
+    color:#EFC18C;;
     transition: 0.3s;
     margin-top: 9px;
     border-bottom-width:1px ;
@@ -387,7 +391,68 @@ a.anchor {
     font-size: 40px;
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
-    color:#F3E1C7;
-
+    color:#EFC18C;
 }
 
+.form input{
+    margin-top: 10px;
+    border:0;
+    padding:10px;
+    font-family:Arial, sans-serif;
+    color:#482309;
+    border:1px solid #C1273A;
+    margin:0 0 20px;
+    width:300px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -moz-box-shadow: inset 0 0 4px #C1273A;
+    -webkit-box-shadow: inset 0 0 4px C1273A;
+    box-shadow: inner 0 0 4px #C1273A;
+    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
+}
+
+.form textarea{
+    margin-top: 10px;
+    border:0;
+    padding:10px;
+    font-family:Arial, sans-serif;
+    color:#482309;
+    border:1px solid  #C1273A;
+    margin:0 0 20px;
+    width:300px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    -moz-box-shadow: inset 0 0 4px #C1273A;
+    -webkit-box-shadow: inset 0 0 4px C1273A;
+    box-shadow: inner 0 0 4px #C1273A;
+    font-family:'Tsukushi B Round Gothic'; font-weight: normal;
+}
+
+.form button{
+    background: #C1273A;
+    color: #EFC18C;
+    font-size: 12px;
+    border: 1px solid #EFC18C;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'バンコク', sans-serif;
+
+    margin-bottom: 30px;
+}
+
+.form button:hover{
+    background: #B14243;
+    color:#fff;
+    border: 1px solid #C1273A;
+    transition: 1s;
+}
