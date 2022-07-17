@@ -144,7 +144,7 @@ a.anchor {
 }
 
 .panel-item{
-    margin-top: 40px auto;
+    margin-top: 40px;
     text-decoration: none;
 
     overflow: hidden;
@@ -152,7 +152,7 @@ a.anchor {
 }
 
 .panel-item img{
-
+    margin-top: 100px;
     width: 200px;
     height: auto;
 
