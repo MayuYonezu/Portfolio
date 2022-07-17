@@ -192,6 +192,7 @@ a.anchor {
     font-family: 'バンコク', sans-serif;
     text-align: center;
     color:#482309;
+    transition: 1s;
 }
 
 .field h1{
@@ -200,12 +201,14 @@ a.anchor {
     font-size: 40px;
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
+    transition: 1s;
 }
 
 /* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
 .field object{
     width: 80%;
     height: 500px;
+    transition: 1s;
 }
 
 .field h4{
@@ -214,6 +217,7 @@ a.anchor {
     font-size: 18px;
     /* フォントの設定 */
     font-family: 'Tsukushi B Round Gothic'; font-weight: bold;
+    transition: 1s;
 }
 
 .field p{
@@ -222,6 +226,14 @@ a.anchor {
     font-size: 14px;
     /* フォントの設定 */
     font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+    transition: 1s;
+}
+.field:hover{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    transition: 1s;
 }
 
   footer{
@@ -246,6 +258,7 @@ a.anchor {
     font-family: 'バンコク', sans-serif;
     text-align: center;
     color:#482309;
+    transition: 1s;
 }
 
 .skill h1{
@@ -254,6 +267,7 @@ a.anchor {
     font-size: 40px;
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
+    transition: 1s;
 }
 
 .skill h2{
@@ -262,6 +276,7 @@ a.anchor {
     font-size: 70px;
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
+    transition: 1s;
 }
 
 .skill p{
@@ -270,6 +285,7 @@ a.anchor {
     font-size: 40px;
     /* フォントの設定 */
     font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
+    transition: 1s;
 }
 
 .skill-img {
@@ -280,7 +296,16 @@ a.anchor {
     margin-bottom: 50px;
     margin-right: 50px;
     margin-left: 50px;
+    transition: 1s;
   }
+
+  .skill:hover{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    transition: 1s;
+}
 
 .work{
     margin: 0 auto;
@@ -289,6 +314,7 @@ a.anchor {
     font-family:'Tsukushi B Round Gothic'; font-weight: normal;
     text-align: center;
     color:#482309;
+    transition: 1s;
 }
 
 .work h1{
@@ -297,6 +323,7 @@ a.anchor {
     font-size: 40px;
     /* フォントの設定 */
     font-family: 'バンコク', sans-serif;
+    transition: 1s;
 }
 
 .work h2{
@@ -305,6 +332,7 @@ a.anchor {
     font-size: 25px;
     /* フォントの設定 */
     font-family:'Tsukushi B Round Gothic'; font-weight: bold;
+    transition: 1s;
 }
 
 .work a{
@@ -318,12 +346,14 @@ a.anchor {
     display:block;
     padding-bottom: 10px;
     border-bottom: 10px solid transparent ;
+    transition: 1s;
 }
 
 .work a:hover{
     transition: 0.3s;
     margin-top: 9px;
     border-bottom-width:1px ;
+    transition: 1s;
 }
 
 .work-img {
@@ -334,7 +364,16 @@ a.anchor {
     margin-bottom: 50px;
     margin-right: 50px;
     margin-left: 50px;
+    transition: 1s;
   }
+
+  .work:hover{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    transition: 1s;
+}
 
   .contact{
     margin: 0 auto;
