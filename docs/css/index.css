@@ -206,8 +206,8 @@ a.anchor {
 
 /* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
 .field object{
-    width: 80%;
-    height: 500px;
+    width: 40%;
+    height: 400px;
     transition: 1s;
 }
 
@@ -228,11 +228,9 @@ a.anchor {
     font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
     transition: 1s;
 }
-.field:hover{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right: 40px;
-    margin-left: 40px;
+.field:hover object{
+    width: 70%;
+    height: 600px;
     transition: 1s;
 }
 
@@ -299,7 +297,7 @@ a.anchor {
     transition: 1s;
   }
 
-  .skill:hover{
+  .skill:hover h2{
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 40px;
