@@ -206,10 +206,17 @@ a.anchor {
 
 /* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
 .field iframe{
+    width : 50vw ; /* 画面幅の50％ */
+    height : 28vmax ; /* 画面幅の50％ */
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+    transition: 1s;
     transition: 1s;
 }
 
 .field:hover iframe{
+    
     transition: 1s;
 }
 
