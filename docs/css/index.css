@@ -351,6 +351,10 @@ a.anchor {
     padding-bottom: 10px;
     border-bottom: 10px solid transparent ;
     transition: 1s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .work a:hover{
@@ -358,6 +362,10 @@ a.anchor {
     margin-top: 9px;
     border-bottom-width:1px;
     transition: 1s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .work-img {
