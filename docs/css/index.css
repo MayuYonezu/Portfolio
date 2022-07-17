@@ -206,8 +206,8 @@ a.anchor {
 
 /* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
 .field object{
-    width: 40%;
-    height: 400px;
+    width: 20%;
+    height: 200px;
     transition: 1s;
 }
 
@@ -229,8 +229,8 @@ a.anchor {
     transition: 1s;
 }
 .field:hover object{
-    width: 70%;
-    height: 600px;
+    width: 40%;
+    height: 400px;
     transition: 1s;
 }
 
@@ -503,3 +503,5 @@ a.anchor {
     color:#FF9933;
     transition: 1s;
 }
+
+
