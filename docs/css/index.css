@@ -205,9 +205,11 @@ a.anchor {
 }
 
 /* フィールドのオブジェクト設定=>スライドから画像に変更するかも！ */
-.field object{
-    width: 20%;
-    height: 200px;
+.field iframe{
+    transition: 1s;
+}
+
+.field:hover iframe{
     transition: 1s;
 }
 
@@ -228,11 +230,11 @@ a.anchor {
     font-family: 'Tsukushi B Round Gothic'; font-weight: normal;
     transition: 1s;
 }
-.field:hover object{
-    width: 40%;
-    height: 400px;
+/* .field:hover iframe{
+    width: 50%;
+    height:50%;
     transition: 1s;
-}
+} */
 
   footer{
     overflow: hidden;
