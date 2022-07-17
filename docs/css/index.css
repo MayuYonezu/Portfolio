@@ -144,11 +144,10 @@ a.anchor {
 }
 
 .panel-item{
-    margin-top: 30px auto;
+    margin-top: 40px auto;
     text-decoration: none;
 
     overflow: hidden;
-
     display: block;
 }
 
@@ -416,9 +415,14 @@ a.anchor {
     border-radius: 3px;
 
     -moz-box-shadow: inset 0 0 4px #C1273A;
-    -webkit-box-shadow: inset 0 0 4px C1273A;
-    box-shadow: inner 0 0 4px #C1273A;
+    -webkit-box-shadow: inset 0 0 4px #fff;
+    box-shadow: inner 0 0 4px #fff;
     font-family:'Tsukushi B Round Gothic'; font-weight: normal;
+}
+
+.form:hover input{
+    padding:12px;
+    transition: 1.5s ease;
 }
 
 .form textarea{
@@ -439,6 +443,11 @@ a.anchor {
     -webkit-box-shadow: inset 0 0 4px C1273A;
     box-shadow: inner 0 0 4px #C1273A;
     font-family:'Tsukushi B Round Gothic'; font-weight: normal;
+}
+
+.form:hover textarea{
+    padding:12px;
+    transition: 1.5s ease-out;
 }
 
 .form button{
