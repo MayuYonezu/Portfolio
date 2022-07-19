@@ -56,6 +56,7 @@ nav{
 .nav-li{
     list-style-type: none;
     height: 70px;
+    font-size: clamp(5px,3vw,20px);
 
 }
 
@@ -69,6 +70,7 @@ nav{
 .nav-nli{
     /* 要素を右に寄せる */
     float:left;
+    font-size: clamp(5px,3vw,20px);
 }
 
 /* ナビゲーション（タイトル）の設定 */
