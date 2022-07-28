@@ -6,20 +6,30 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" href="./images/iCon.png">
     <title>まゆペでぃあ</title>
+    <script language="javascript" type="text/javascript">
+        function OnButtonClick() {
+          // console.log("clicked!");
+          let element = document.getElementById("menu-btn");
+          element.checked = false;
+        }
+      </script>
 </head>
 <body>
     <!--ナビゲーションー-->
-    <nav>
-        <ul class="inner_container">
-            <li class="nav-tli nav-li"><a href="#" class="nav-tbtn">Mayu Yonezu</a></li>
-            <li class="nav-nli nav-li"><a href="#field" class="nav-btn">Field</a></li>
-            <li class="nav-nli nav-li"><a href="#skill" class="nav-btn">Skill</a></li>
-            <li class="nav-nli nav-li"><a href="#works" class="nav-btn">Works</a></li>
-            <li class="nav-nli nav-li"><a href="#contact" class="nav-btn">Contact</a></li>
-            
-            
+    <header class="header">
+        <div class="navtext-container">
+          <div class="navtext">Mayu Pedia</div>
+        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+        <ul class="menu inner_container">
+            <li class="nav-tli nav-li"><a href="?1#" class="nav-tbtn">TOP</a></li>
+            <li class="nav-nli nav-li"><a href="?2#field" class="nav-btn">Field</a></li>
+            <li class="nav-nli nav-li"><a href="?3#skill" class="nav-btn">Skill</a></li>
+            <li class="nav-nli nav-li"><a href="?4#works" class="nav-btn">Works</a></li>
+            <li class="nav-nli nav-li"><a href="?5#contact" class="nav-btn">Contact</a></li>
         </ul>
-    </nav>
+      </header>
 
     <!--プロフィール関連-->
     <div">
@@ -110,8 +120,7 @@
         <p>パーソナルカラーの観点から、透過型HMDを用いて、ユーザの肌の色と衣服の色の相性を可視化するシステム開発を行なっています。</p>
         <img src="./images/c.png" width="50px" height="50px">
         
-    </div>
-                                                            <br>
+    </div><br>
 
     <div class="work-img">
         <a href="https://line.me/S/sticker/5201247/?lang=ja&utm_source=gnsh_stickerDetail"><img src="./images/works2.png"></a>
