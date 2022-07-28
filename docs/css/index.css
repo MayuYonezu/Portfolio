@@ -14,7 +14,7 @@
 
 body{
     /* bodyタグの背景色を変更 */
-    background: radial-gradient(#F3E1C7,#F2D3AA,#EFC18C )
+    background: radial-gradient(#F3E1C7,#F2D3AA,#EFC18C );
 }
 
 /* （中央配置）.containerクラスの指定 */
@@ -34,104 +34,165 @@ body{
     margin: auto;
 }
 
-/* ナビゲーションバーの設定 */
-nav{
-    /* 親ブロックの要素の縦幅を内側の要素がはみ出ないように調整
-        （heightを指定しなければ、内側の要素高さに親要素の高さをピッタリ合わせてくれる） */
-    overflow: hidden;
-    /* メニューの色変更 */
-    background:radial-gradient(#DC626A, #B14243);  
-    /* 下の空白30px */
-    margin-bottom: 30px;
-    
 
-    /* ナビゲーション固定するためのコード->中身全て動かなくなる！ */
+
+
+
+
+/* Navbar & Navmenu color */
+:root {
+    --background-navbar: radial-gradient(#DC626A, #B14243);
+  }
+  
+  .header {
+    background: var(--background-navbar);
     position: fixed;
     width: 100%;
-    display: flex;
-    
-}
-
-/* ナビゲーション共通の設定 */
-.nav-li{
-    list-style-type: none;
-    height: 70px;
-    font-size: clamp(5px,3vw,20px);
-
-}
-
-/* ナビゲーション（タイトル）の設定 */
-.nav-tli{
-    /* 要素を左に寄せる */
-    float:left;
-}
-
-/* ナビゲーション（コンテンツ）の設定 */
-.nav-nli{
-    /* 要素を右に寄せる */
-    float:left;
-    font-size: clamp(5px,3vw,20px);
-}
-
-/* ナビゲーション（タイトル）の設定 */
-.nav-tbtn{
-    /* テキストにつく線の種類(U線) */
+    height: 52px;
+  }
+  
+  /* Nav items */
+  .menu {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    margin-top: 52px;
+    padding: 0 0 10px 0;
+    clear: both;
+    background: #F3E1C7;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
+  
+  /* Hamburger menu button */
+  .menu-btn:checked ~ .menu {
+    transform: scale(1, 1);
+    transform-origin: top;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  
+  /* Hamburger menbu text */
+  .menu a {
     text-decoration: none;
-    /* テキストの色 */
-    color: #EFC18C;
-    /* 文字のサイズ */
-    font-size: 25px;
-    /* フォントの設定 */
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #482309;
     font-family: 'バンコク', sans-serif;
-    /* 枠線内の間隔 */
-    padding: 17px;
-    /* ブロック要素 */
-    display: flex;
-    /* アニメーションにかける時間 */
     transition: 0.5s;
-}
+  }
 
-/* ナビゲーション（コンテンツ）の設定 */
-.nav-btn{
-    /* テキストにつく線の種類(U線) */
-    text-decoration: none;
-    /* テキストの色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 15px;
-    /* フォントの設定 */
-    font-family: 'バンコク', sans-serif;
-    /* 枠線内の間隔 */
-    padding: 10px;
-    margin-top:17px;
-    /* ブロック要素 */
-    display: flex;
-    /* アニメーションにかける時間 */
+  .menu a:hover {
+    color: #B14243;
     transition: 0.5s;
-}
+  }
 
-/* ナビゲーション（タイトル）のアニメーション設定 */
-.nav-tli :hover{
-    /* テキストの色 */
-    color: #FF9933;
-    /* アニメーションにかける時間 */
+
+  
+  .menu li {
+    border-top: 1px solid #EFC18C;
+    padding: 15px 0;
+    margin: 0 54px;
+    opacity: 0;
     transition: 0.5s;
-}
-
-/* ナビゲーション（コンテンツ）のアニメーション設定 */
-.nav-nli :hover{
-    /* テキストの色 */
-    color: #C1273A;
-    /* アニメーションにかける時間 */
-    transition: 0.5s;
-}
-
-/* ナビゲーションバーに隠れないようにするための空白 */
-a.anchor {
+  }
+  
+  .menu-btn:checked ~ .menu a,
+  .menu-btn:checked ~ .menu li {
+    opacity: 1;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+  }
+  
+  .menu-btn {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 24px 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .navicon {
+    background: #EFC18C;
     display: block;
-    padding-top: 90px;
-    margin-top: -90px;
-}
+    height: 3px;
+    width: 26px;
+    position: relative;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  
+  .navicon:before,
+  .navicon:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #EFC18C;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  
+  .navicon:before {
+    top: 9px;
+  }
+  
+  .navicon:after {
+    bottom: 9px;
+  }
+  
+  /* Hamburger Menu Animation Start */
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+    top: 0;
+  }
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    bottom: 0;
+  }
+  
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: rgba(0, 0, 0, 0);
+    transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  /* Hamburger Menu Animation End */
+  
+  /* Navbar Container */
+  .navtext-container {
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navbar Text */
+  .navtext {
+    position: absolute;
+    color: #EFC18C;
+    letter-spacing: 4px;
+    font-family: 'バンコク', sans-serif;
+    font-size: 25px;
+  }
+
+
+
+
+
 
 /* プロフィール作成の背景と設定 */
 .profile{
@@ -154,7 +215,7 @@ a.anchor {
 }
 
 .panel-item img{
-    margin-top: 100px;
+    margin-top: 60px;
     width: 200px;
     height: auto;
 
